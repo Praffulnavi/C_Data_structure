@@ -18,4 +18,4 @@ int main()
     printf("%d ",a[i]);
 }
 output:
-30 30 40 
+20 30 40 
