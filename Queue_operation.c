@@ -44,42 +44,15 @@ void display() {
 }
 
 int main() {
-    int choice, value;
-    printf("Queue Operations using Array\n");
-    printf("--------------------------------\n");
-
-    while (1) {
-        printf("\n1. Enqueue\n2. Dequeue\n3. Peek\n4. Display\n5. Exit\n");
-        printf("Enter your choice: ");
-        scanf("%d", &choice);
-
-        switch (choice) {
-            case 1:
-                printf("Enter value to insert: ");
-                scanf("%d", &value);
-                enqueue(value);
-                break;
-
-            case 2:
-                dequeue();
-                break;
-
-            case 3:
-                peek();
-                break;
-
-            case 4:
-                display();
-                break;
-
-            case 5:
-                printf("Exiting...\n");
-                return 0;
-
-            default:
-                printf("Invalid choice! Please try again.\n");
-        }
-    }
-
+    enqueue(10);
+    enqueue(20);
+    enqueue(30);
+    enqueue(40);
+    enqueue(50);
+    display();
+    dequeue(10);
+    display();
+    peek();
+    display();
     return 0;
 }
